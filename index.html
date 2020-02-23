@@ -6,17 +6,72 @@
     <title>steely test</title>
       <title>sketch5.js</title>
   </head>
+
+  
   <link rel="stylesheet" type="text/css" href="-debug.css">
   <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="p5.min.js" type="text/javascript"></script>
-    <script src="sketch.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
+     <style>
+     #mapISS {height:250px;
+              width :400px;
+              padding: 50px}
+     </style>
+     <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      </style>
   
   </head>
   <body>
     
-    <h1>Test Heading</h1>
+    <div id = 'heding'>
+    <h1 id="Title">Where is the ISS </h1>
+    </div>
+    <div class='column'>
+    <p id="latP"></p>
+    <p id="lngP"></p>
+    
 
-    <p id="sts"> something to say</p>
+    
+
+
+  <div id ="mapISS" class = "column"></div>
+  <script src="sketch.js" type="text/javascript"></script>
+
+  <div class = column>
+    <ol>
+      <p> 1
+      </p>
+      <p> 1
+      </p>
+    </ol>
+  </div>
+
   </body>
 </html>
